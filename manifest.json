@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas Grade Sandbox",
+  "version": "1.0",
+  "description": "Calculates hypothetical grades on Canvas.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.instructure.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
